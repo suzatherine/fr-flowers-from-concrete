@@ -1,5 +1,5 @@
 :: StoryTitle
-Spirits of Concrete & Iron
+The Flowers That Grow from Concrete
 
 
 :: StoryData
@@ -209,8 +209,9 @@ setup.addCaptions = (cuekey) =>  {
      const track = audio.addTextTrack('subtitles', 'English', 'en');
     track.mode = 'showing';
     const cues = {
-      spirits: [[9.933,15.4,"Let me introduce you to Kharkiv, my city."],[15.466,16.933,"It's eclectic"],[16.958,21.121,"Just like Liverpool, it’s a centre for culture, science,"],[21.146,24.812,"education, philosophy and trade."],[24.837,29.145,"The streets are full of students from around the world."],[29.17,31.401,"Situated between Asia and Europe,"],[31.426,34.023,"you can see our transnational history"],[34.048,37.501,"carved out in the different architecture."],[37.546,42.367,"Here is where the first concrete skyscraper was built in the Soviet Union."],[42.392,45.723,"An amazing monument of constructivism,"],[45.659,50.167,"made from concrete and iron, using horses."],[50.192,55.856,"Kharkiv is only 40 kilometres from Russia and has become a city on the frontline."],[55.881,60.123,"From the first days, our busy streets, were targeted with rockets"],[60.148,62.501,"cluster and air bombs."],[62.568,66.024,"But just like concrete and iron are hard to destroy,"],[66.049,68.39,"our spirits are also unbreakable."],[68.41499999999999,71.812,"As each of us bravely questioned our responsibility."],[71.837,74.901,"Asking how can I help to win?"],[74.947,76.833,"To survive?"],[76.861,80.501,"And for a moment concerts were silent,"],[77,79,""],[80.526,83.545,"and Philharmonic Music Halls close their doors"],[83.57,87.723,"As musicians like Stas Kononov put down their instruments"],[87.748,91.10300000000001,"and became a frontline volunteer…"],[98.756,101.064,"STAS KONONOV: I was meant to play a concert in London"],[101.089,105.289,"on the 28th of February."],[105.314,107.789,"On the morning of the 24th"],[107.82300000000001,110.99000000000001,"a friend of mine, came knocking on my door, shouting"],[111.023,115.156,"‘wake up, or you will sleep through the war’."],[115.223,118.539,"For the next few days myself and other artists"],[118.564,121.94,"gathered in a small flat near the centre."],[121.965,124.123,"People were coming and going"],[124.173,126.273,"and we were trying to work out,"],[126.32300000000001,129.856,"should we stay or should we leave?"],[129.881,134.54,"I received a phone call from a friend in a more dangerous district,"],[134.565,139.148,"saying that there was a basement with 450 people."],[139.173,141.573,"That they didn’t have anything,"],[141.623,144.256,"no food, no water"],[144.281,147.498,"and its too dangerous to go outside."],[147.523,152.423,"It was the moment I realised that I must stay."],[152.448,156.80599999999998,"That there was a responsibility to provide and seek resources."],[156.83100000000002,159.475,"The flat I was in became a headquarters"],[159.5,163.923,"and everyone there if not actors, were connected to music, art, culture."],[163.948,167.323,"It was a little chaotic in that moment."],[167.348,170.323,"Someone provides something and its distributed"],[170.348,172.273,"to whoever most needs…"],[172.298,174.023,"Sharing everything…"],[174.048,177.323,"It was a very intense process."],[177.348,180.34,"After some time it became more organised"],[180.365,184.045,"and we had districts and volunteers in each area."],[184.09,186.203,"Of course it was dangerous."],[186.157,188.956,"Everywhere in Kharkiv was dangerous."],[188.981,191.49,"But I know a lot of examples of bravery"],[191.515,194.94,"and for me what I was doing is not brave."],[194.965,196.94,"It was stressful and frightening,"],[196.965,199.656,"it was a lots of things."],[199.681,202.431,"Everything makes you cry but inside"],[202.456,205.406,"but inside you have this feeling that you are in the right place,"],[205.431,209.123,"are part of something bigger than yourself,"],[209.148,213.406,"that we are all equal, all connected."],[213.43099999999998,218.59,"Everyone helps everyone and it doesn’t matter who you were before."],[218.615,221.80599999999998,"You could of been a businessman with a Tesla car"],[221.83100000000002,224.99,"or an artist who drives something very shitty."],[225.015,230.44,"Even the chief commander of the military base worked without hierarchy."],[230.465,232.95600000000002,"It was a horizontal connection…"],[232.981,234.70600000000002,"it was solidarity."],[233,234.707,""],[234.731,237.09,"You called someone if you needed something"],[237.115,238.95600000000002,"and you solved it."],[238.981,244.123,"It felt that one hundred people were one."],[244.148,247.323,"Before the full-scale invasion,"],[247.348,249.873,"I was asking these questions"],[249.898,251.59,"Who am I?"],[251.615,254.29,"What am I?"],[254.348,259.706,"This situation gave me the answers."],[263.21,268.16,"It feels like making music has not mattered for a long time."],[268.185,271.74,"A lot of musicians reject music right now."],[271.765,274.606,"To play, you must be in the moment,"],[274.631,277.79,"be present, to connect to your emotions."],[277.815,281.823,"It is very stressful and painful and when you start to play,"],[281.848,284.473,"you feel your pain and it comes in such a wave that"],[284.498,288.74,"you stop and think, never again."],[288.765,291.99,"We don’t have the space to be emotional."],[292.015,294.956,"So you go round in this circle."],[294.981,298.956,"And come back to the idea that it is not the time…"],[298.981,301.606,"maybe later."]], 
-      mixtape: [[10.2,13.866,"Musician Stas Kononov continues to volunteer,"],[13.891,17.266,"distributing supplies to civilians and soldiers."],[17.291,22.49,"It is on the frontline, he begins to play again - concerts for the army."],[22.515,26.856,"Acoustic sounds, songs from his album he is yet to release"],[26.881,30.589,"and music he recorded in a legendary studio in Izium"],[30.614,35.156,"that has now been completely destroyed…"],[35.17,36.17,""]]}
+      flowers:[[8.546,11.25,"I call what I do cultural activism."],[11.275,15.209,"I founded Parade-Fest as a way to say something loudly together"],[15.234,20.68,"about human rights, LGBTQ+ rights, feminism and inclusion."],[20.705,25.339,"Using arts in public spaces to raise civic awareness."],[25.364,29.799,"Asking how can we claim our rights to live in the city and to change it."],[29.824,35.577,"…Of course, now we claim our rights to our cities in a different way"],[35.602,38.347,"with weapons."],[38.372,42.624,"As the artist and journalist Alevtina Shvetsova told me her story,"],[42.649,46.283,"it reminded me of before the full-scale invasion."],[46.308,50.839,"The many people Parade-Fest had found in Mariupol to speak loudly with."],[50.864,53.807,"That as flowers bloomed, we were planning and dreaming"],[53.832,57.767,"to make this choir of cultural interventions."],[57.792,59.792,"As I listened to Alevtina,"],[59.817,63.913,"I questioned how is it possible to explain all of this to you?"],[63.938,66.521,"How could I describe this huge chandelier"],[66.546,70.70400000000001,"that hung from the ceiling of Mariupol Drama Theatre?"],[70.729,74.22,"Or what happened to its crystals when the rocket hit the theatre?"],[74.245,78.791,"Because it must be too big to have completely disappeared?"],[78.816,82.505,"And is it important to speak of ashes from the chandelier,"],[82.53,86.41,"when hundreds of people were killed in that theatre?"],[86.435,87.435,""],[91.506,95.569,"ALEVTINA SHVETSOVA: I was born and lived in Mariupol all my life."],[95.594,97.418,"I love it very much."],[97.443,100.426,"I’m from a Factory Workers dynasty,"],[100.451,103.96600000000001,"but I dreamed of being a journalist."],[103.991,107.20400000000001,"In 2014, when everything started,"],[107.229,109.64,"my son was born."],[109.66499999999999,112.116,"He was my universe."],[112.14099999999999,115.601,"So despite all these crucial situations"],[115.626,119.21600000000001,"I was concentrating on being a mother."],[119.241,123.236,"Then the Russians shelled Mariupol in 2015,"],[123.261,125.664,"and it was a huge shock."],[125.697,131.156,"A lot of people died, a lot of kids."],[131.181,136.561,"And from that moment we understood what war is."],[136.586,138.863,"It was very scary,"],[138.888,143.243,"and it mobilised people because we were afraid to be occupied."],[143.268,145.831,"I decided to become a journalist,"],[145.856,150.95,"to work on TV and to challenge the Russian propaganda that"],[150.975,153.847,"Mariupol is a Russian city with Russian culture,"],[153.872,159.418,"showing instead Ukrainian artists, poets, fine arts…"],[159.44299999999998,161.513,"A lot of art festivals,"],[161.538,165.958,"cultural events and exhibitions became inspired"],[165.983,170.839,"in this period and appeared in the city."],[170.864,175.94,"It was like fresh water that quenched a dry throat."],[175.965,181.305,"A synergy of artists, local people and audiences."],[181.33,186.704,"Art became united with this industrial landscape,"],[186.729,193.243,"like flowers that grow from the concrete."],[193.292,197.966,"Donetsk was occupied and on the road there from Mariupol,"],[197.99099999999999,201.839,"a performance called The Way Home was created."],[201.864,204.132,"It ended on the bridge with the resurrection"],[204.157,209.624,"of a huge iron sculpture symbolising the Tree of Life."],[209.649,210.649,""],[214.895,217.958,"When the full-scale invasion began,"],[217.983,221.378,"we thought we already knew what worries  were"],[221.403,227.878,"but we did not imagine how merciless Russians can be."],[227.903,229.18,"From the beginning,"],[229.20499999999998,233.124,"a lot of people lost their homes because of shelling."],[233.165,239.355,"There was no water, food, electricity…"],[239.38,244.791,"o internet or mobile connection."],[244.84,251.379,"Mariupol Drama Theatre became a humanitarian and informational point."],[252.078,255.721,"By March it was already impossible to leave the city,"],[255.746,260.992,"and there were rumours there would be an evacuation from the theatre."],[261.017,264.484,"Myself and my son went every day"],[264.509,267.646,"but the evacuation never happened."],[267.671,269.564,"On the 16th of March,"],[269.589,272.249,"I was at home preparing soup in the courtyard"],[272.274,275.661,"with our neighbours in our building."],[275.686,277.619,"This was the only way we could cook,"],[277.644,280.58,"and everyone was hungry."],[280.631,283.677,"I came up to the apartment with the kids to eat"],[283.702,286.773,"and then there was a huge explosion."],[286.798,289.265,"The bomb had landed in the courtyard,"],[289.29,296.688,"and we could not see because dust was everywhere."],[296.713,303.04,"My brother took the smaller kids, and the adults began to dig."],[303.065,308.065,"We found our neighbour's bodies under the rubble."],[308.09,316.135,"After that, we understood that no one and nothing will save us."],[316.16,320.87,"We decided to walk by foot from Mariupol."],[320.895,325.09,"As we fled we could see the fire from the explosion"],[325.115,327.955,"on the Mariupol Drama Theatre."],[327.98,334.159,"It was the same plane that dropped the bomb on my home."],[334.18399999999997,337.161,"The whole city was on fire,"],[337.186,339.86,"with clouds of smoke so we didn't know the measure"],[339.885,344.992,"of the tragedy that took place in the theatre."],[345.017,350.259,"We heard later that hundreds of people lay in the ashes."],[350.284,352.627,"It was a big shock."],[352.652,355.385,"It was clearly marked as a theatre"],[355.40999999999997,358.222,"and there were huge letters written outside"],[358.247,364.519,"on the ground that said “children”."],[364.544,367.522,"When the Russians occupied the city"],[367.547,373.619,"they did not take the bodies from under the ruins of the theatre."],[373.644,381.452,"So no one knows the exact number of people that died in this tragedy."],[381.477,385.5,"They took all ashes and transported them somewhere,"],[385.525,390.144,"dropping them just like trash."],[390.169,400.14300000000003,"Then they made the surface concrete and began to use the space for concerts."],[400.168,404.783,""]]
+      }
+
     for (let i=0; i<cues[cuekey].length; i++){
     const cue = new VTTCue(cues[cuekey][i][0],cues[cuekey][i][1],cues[cuekey][i][2]);
     track.addCue(cue); 
@@ -483,7 +484,7 @@ setup.backThirty = () => {
 <<if $transcript is false>>
   <<set $transcript to true>>
   <<replace "#transcript">>
-    <<include "spiritstranscript">>
+    <<include "flowerstranscript">>
   <</replace>>
   <<else>>
   <<set $transcript to false>>
@@ -590,7 +591,7 @@ You have two options:
 
 
 <div class="poster-wrapper">
-   <img class="poster" src="./../assets/img/sci.jpeg"/>
+   <img class="poster" src="./../assets/img/ftgfc.jpeg"/>
  </div>
 <<button "Begin">><<goto $nextpass>><</button>>
 
@@ -676,13 +677,14 @@ You have two options:
 <div id="map" class="hide">$map</div>
 
 <p>You should be on the steps, outside St Lukes Bombed Out Church</p>
-<p>Destroyed during the 2nd world war, it now stands as a memorial to those who were killed</p>
-<p>Is the church</p>
+<p>Destroyed during the 2nd World War, it now stands as a memorial to those who were killed</p>
+Is the church
+
 
   <<button "OPEN">><<goto "open">><</button>>
-  <p>or</p>
-  <<button "CLOSED">><<goto "closed">><</button>>
- 
+  or
+  <<button "CLOSED?">><<goto "closed">><</button>>
+
 </main>
 <<include "footer">>
 
@@ -740,9 +742,9 @@ You have two options:
 
 
 :: preintro [nobr] {"position":"450,50","size":"100,100"}
-<<set $prevpass to "instnar2">>
+<<set $prevpass to "instnar1">>
 <<set $passage to "preintro">>
-<<set $nextpass to "spirits">>
+<<set $nextpass to "flowers">>
 <<set $showMap to false>>
 <<set $showAudio to false>>
 <<set $showReplay to true>>
@@ -753,9 +755,9 @@ You have two options:
 <div id="mount"></div>
   <<timed 0.1s>><<replace "#mount">>
  <div class="poster-wrapper">
-   <img class="poster" src="./../assets/img/sci.jpeg"/>
+   <img class="poster" src="./../assets/img/ftgfc.jpeg"/>
  </div>
-    <p>Press  <div class="inline-btn-wrapper">[[play|spirits]] </div>to listen </p>
+    <p>Press  <div class="inline-btn-wrapper">[[play|flowers]] </div>to listen to The Flowers That Grow from Concrete</p>
   <</replace>><</timed>>
 
 </main>
@@ -775,7 +777,7 @@ You have two options:
 <<set $showCaptionsIcon to true>> */
 
 
-:: spirits [nobr] {"position":"700,175","size":"100,100"}
+:: flowers [nobr] {"position":"700,175","size":"100,100"}
 <<set $prevpass to "preintro">>
 <<set $passage to "intro">>
 <<set $nextpass to "instnar3">>
@@ -788,11 +790,11 @@ You have two options:
 <<include "headerstory">>
 <main class="story">
 <audio id="audio" autoplay>
-  <source src="https://www.dropbox.com/s/8wwb0xty3hsf5x4/02-Spirits-of-Concrete-and-Iron.mp4?raw=1">
+  <source src="https://www.dropbox.com/s/ua8cy9t2y147a27/03.%20Flowers%20that%20Grow%20through%20Concrete%20V1.mp3?raw=1">
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
 <div class="poster-wrapper">
-   <img class="poster" src="./../assets/img/sci.jpeg"/>
+   <img class="poster" src="./../assets/img/ftgfc.jpeg"/>
  </div>
 <div id="caption"></div>
 <div id="transcript"></div>
@@ -811,62 +813,56 @@ You have two options:
 
 <<include "footerstory">>
 <<done>>
-  <<set $addC to setup.addCaptions("spirits")>>
+  <<set $addC to setup.addCaptions("flowers")>>
 <</done>>
 
 
-:: spiritscues {"position":"850,225","size":"100,100"}
-
-
-:: spiritstranscript {"position":"975,225","size":"100,100"}
+:: flowerstranscript {"position":"975,225","size":"100,100"}
 <h2>Transcript</h2>
 NARRATOR:
-Let me introduce you to Kharkiv, my city.
-It's eclectic
-Just like Liverpool, it’s a centre for culture, science, education, philosophy and trade. The streets are full of
-students from around the world.
+I call what I do cultural activism. 
+I founded Parade-Fest as a way to say something loudly together - about human rights, LGBTQ+ rights, feminism and inclusion. Using arts in public spaces to raise civiv awareness.
+Asking how can we claim our rights to live in the city and to change it.
+…Of course, now we claim our rights to our cities in a different way, with weapons. 
+- 
+As the artist and journalist Alevtina Shvetsova told me her story, it reminded me of before the full-scale invasion. The many people Parade-Fest had found in Mariupol to speak loudly with. That as flowers bloomed, we were planning and dreaming to make this choir of cultural interventions.
 -
-Situated between Asia and Europe, you can see our transnational history carved out in the different architecture.
-Here is where the first concrete skyscraper was built in the Soviet Union. An amazing monument of constructivism,
-made from concrete and iron, using horses.
--
-Kharkiv is only 40 kilometres from Russia and has become a city on the frontline.
-From the first days, our busy streets, were targeted with rockets, cluster and air bombs. But just like concrete
-and iron are hard to destroy, our spirits are also unbreakable. As each of us bravely questioned our
-responsibility. Asking how can I help to win? To survive?
-And for a moment concerts were silent, and Philharmonic Music Halls close their doors. As musicians like Stas
-Kononov put down their instruments and became a frontline volunteer…
-STAS KONONOV:
-I was meant to play a concert in London on the 28th of February.
-On the morning of the 24th a friend of mine, came knocking on my door, shouting ‘wake up, or you will sleep
-through the war’.
-For the next few days myself and other artists gathered in a small flat near the centre.
-People were coming and going and we were trying to work out, should we stay or should we leave?
-I received a phone call from a friend in a more dangerous district, saying that there was a basement with 450
-people. That they didn’t have anything, no food, no water and its too dangerous to go outside.
-It was the moment I realised that I must stay. That there was a responsibility to provide and seek resources.
-The flat I was in became a headquarters and everyone there if not actors, were connected to music, art, culture.
-It was a little chaotic in that moment. Someone provides something and its distributed to whoever most needs…
-Sharing everything…
-It was a very intense process.
-After some time it became more organised and we had districts and volunteers in each area.
-Of course it was dangerous. Everywhere in Kharkiv was dangerous.
-But I know a lot of examples that are brave and for me what I was doing is not brave.
-It was stressful and frightening, it was a lots of things. Everything makes you cry but inside you have this
-feeling that you are in the right place, are part of something bigger than yourself, that we are all equal, all
-connected.
-Everyone helps everyone and it doesn’t matter who you were before. You could of been a businessman with a Tesla
-car or an artist who drives something very shitty.
-Even the chief commander of the military base worked without hierarchy. It was a horizontal connection… it was
-solidarity. You called someone if you needed something and you solved it.
-It felt that one hundred people were one.
-Before the full-scale invasion, I was asking these questions - Who am I? What am I? This situation gave me the
-answers.
-It feels like making music has not mattered for a long time. A lot of musicians reject music right now.
-To play, you must be in the moment, be present, to connect to your emotions. It is very stressful and painful and
-when you start to play, you feel your pain and it comes in such a wave that you stop and think, never again.
-We don’t have the space to be emotional. So you go round in this circle. And come back to the idea that it is not
-the time… maybe later.
+As I listened to Alevtina, I questioned how is it possible to explain all of this to you? 
+How could I describe this huge chandelier that hung from the ceiling of Mariupol Drama Theatre? 
+Or what happened to its crystals when the rocket hit the theatre? Because it must be too big to have completely disappeared?
+And is it important to speak of ashes from the chandelier, when hundreds of people were killed in that theatre?
+ALEVTINA SHVETSOVA:
+I was born and lived in Mariupol all my life. I love it very much. I’m from a Factory Workers dynasty, but I dreamed of being a journalist. 
+In 2014, when everything started, my son was born. He was my universe. So despite all these crucial situations I was concentrating on being a mother.
+Then the Russians shelled Mariupol in 2015, and it was a huge shock.
+A lot of people died, a lot of kids. And from that moment we understood what war is.
+It was very scary, and it mobilised people because we were afraid to be occupied. 
+I decided to become a journalist, to work on TV and to challenge the Russian propaganda that Mariupol is a Russian city with Russian culture, showing instead Ukrainian artists, poets, fine arts…
+A lot of art festivals, cultural events and exhibitions became inspired in this period and appeared in the city.
+It was like fresh water that quenched a parched throat. A synergy of artists, local people and audiences. 
+Art became united with this industrial landscape, like flowers that grow from the concrete. 
+Donetsk was occupied and on the road there from Mariupol, a performance called The Way Home was created. It ended on the bridge with the resurrection of a huge iron sculpture symbolising the Tree of Life. 
+Audiences had this deep need for new emotions and art, and we understood how culture could help grow the Ukrainian identity from the inside.
+- - -
+When the full-scale invasion began, we thought we already knew what worries  were but we did not imagine how merciless Russians can be.
+From the beginning, a lot of people lost their homes because of shelling. There was no water, food, electricity… no internet or mobile connection. Mariupol Drama Theatre became a humanitarian and informational point. 
+By March it was already impossible to leave the city, and there were rumours there would be an evacuation from the theatre.
+Myself and my son went every day but the evacuation never happened.
+On the 16th of March, I was at home preparing soup in the courtyard with our neighbours in our building. This was the only way we could cook, and everyone was hungry. I came up to the apartment with the kids to eat and then there was a huge explosion.
+The bomb had landed in the courtyard, and we could not see because dust was everywhere. 
+My brother took the smaller kids, and the adults began to dig. 
+We found our neighbour's bodies under the rubble.
+After that, we understood that no one and nothing will save us.
+We decided to walk by foot from Mariupol. 
+As we fled we could see the fire from the explosion on the Mariupol Drama Theatre. It was the same plane that dropped the bomb on my home.
+The whole city was on fire, with clouds of smoke so we didn't know the measure of the tragedy that took place in the theatre.
+We heard later that hundreds of people lay in the ashes.
+It was a big shock. It was really clearly marked as a theatre and there were huge letters written outside on the ground that said “children”.
+When the Russians occupied the city they did not take the bodies from under the ruins of the theatre.
+So no one knows the exact number of people that died in this tragedy.
+They took all ashes and transported them somewhere, dropping them like trash.
+Then they made the surface concrete and began to use the space for concerts. 
+
 
 
 :: fakeend [nobr] {"position":"1100,225","size":"100,100"}
