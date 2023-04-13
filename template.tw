@@ -661,7 +661,7 @@ You have two options:
 
 
 :: instnar1 [nobr] {"position":"350,225","size":"100,100"}
-<<set $prevpass to "landing">>
+<<set $prevpass to "instructions">>
 <<set $passage to "instnar1">>
 <<set $nextpass to "preintro">>
 <<set $showMap to true>>
