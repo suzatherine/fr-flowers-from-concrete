@@ -581,7 +581,7 @@ You have two options:
 
 
 :: landing [nobr] {"position":"450,50","size":"100,100"}
-<<set $title to "Flowers That Grow from Concrete">>
+<<set $title to "The Flowers That Grow from Concrete">>
 <<set $captions to true>>
 <<set $prevpass to "landing">>
 <<set $passage to "landing">>
@@ -589,8 +589,7 @@ You have two options:
 /* Title  */
 <div class="comp-warning">Best to experience on a phone</div>
 <main class="landing">
-
-
+<h1>The Flowers That Grow from Concrete</h1>
 <div class="poster-wrapper">
    <img class="poster" src="./../assets/img/ftgfc.jpeg"/>
  </div>
@@ -612,7 +611,7 @@ You have two options:
 <<set $showForwards to true>>
 <<set $showBackwards to false>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.4030572538972, -2.969504715141457)>>
+<<set $map = setup.generateDirectionsMap(53.40196451869027, -2.9754933891052615,53.40196451869027, -2.9754933891052615)>>
 
 <div id="audio"></div>
 /* <<include "header">> */
@@ -671,7 +670,7 @@ You have two options:
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.40123951917362, -2.9696925172693147, 53.40123951917362, -2.9696925172693147)>>
+<<set $map = setup.generateDirectionsMap(53.40196451869027, -2.9754933891052615,53.40196451869027, -2.9754933891052615)>>
 <div id="audio"></div>
 <<include "header">>
 <main class="instructions">
@@ -700,7 +699,7 @@ Is the church
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.40123951917362, -2.9696925172693147, 53.40123951917362, -2.9696925172693147)>>
+<<set $map = setup.generateDirectionsMap(53.40167338594615, -2.9750890413069473,53.40167338594615, -2.9750890413069473)>>
 <div id="audio"></div>
 <<include "header">>
 <main class="instructions">
@@ -725,7 +724,7 @@ Is the church
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.40123951917362, -2.9696925172693147, 53.40123951917362, -2.9696925172693147)>>
+<<set $map = setup.generateDirectionsMap(53.40196451869027, -2.9754933891052615,53.40196451869027, -2.9754933891052615)>>
 <div id="audio"></div>
 <<include "header">>
 <main class="instructions">
@@ -878,7 +877,7 @@ Then they made the surface concrete and began to use the space for concerts.
 <<set $showBackwards to true>>
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.4030572538972, -2.969504715141457)>>
+<<set $map = setup.generateDirectionsMap(53.40196451869027, -2.9754933891052615,53.40196451869027, -2.9754933891052615)>>
 <div id="audio"></div>
 
 <main class="instructions">
@@ -931,7 +930,7 @@ Then they made the surface concrete and began to use the space for concerts.
 <<set $showBackwards to true>>
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
-<<set $map = setup.generateDirectionsMap(53.40122672594675, -2.969617415416523,53.40188587934155, -2.97516167308871)>>
+<<set $map = setup.generateDirectionsMap(53.401789031994916, -2.9751729896109786,53.40263318725156, -2.9777506895271695)>>
 <div id="audio"></div>
 
 <main class="instructions">
@@ -956,7 +955,7 @@ Then they made the surface concrete and began to use the space for concerts.
 <<set $showCaptionsIcon to false>>
 /* <<set $showAudio to true>> */
 /* Phil to Church  */
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.40143323565547, -2.9706816152244295)>>
+<<set $map = setup.generateDirectionsMap(53.401789031994916, -2.9751729896109786,53.40263318725156, -2.9777506895271695)>>
 <main class="instructions">
 <div id="audio"></div>
 <div id="map" class="hide">$map</div>
@@ -984,18 +983,19 @@ Then they made the surface concrete and began to use the space for concerts.
 <<set $showBackwards to true>>
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to true>>
-<<set $map = setup.generateDirectionsMap(53.4030572538972, -2.969504715141457,53.40143323565547, -2.9706816152244295)>>
+<<set $map = setup.generateDirectionsMap(53.401789031994916, -2.9751729896109786,53.40263318725156, -2.9777506895271695)>>
 <<include "headerstory">>
 <main class="story">
-<audio id="audio" >
+<audio id="audio" autoplay >
   <source src="https://www.dropbox.com/s/9xo321slihet6hf/03.boombox.mp3?raw=1">
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
 
-<div id="map" class="hide">$map</div>
-<div class="poster-wrapper">
+<div id="map">$map</div>
+/* <div class="poster-wrapper">
    <img class="poster" src="./../assets/img/ftgfc.jpeg"/>
- </div>
+ </div> */
+<br>
 <div id="caption" ></div>
 <div id="transcript"></div>
 <div id="mount" ></div>
@@ -1034,12 +1034,13 @@ After this Boombox postponed their concerts, and their frontman joined the Ukrai
 <<set $showForwards to false>>
 <<set $showCaptionsIcon to false>>
 /* Church  */
-<<set $map = setup.generateDirectionsMap(53.40143323565547, -2.9706816152244295, 53.40143323565547, -2.9706816152244295)>>
+<<set $map = setup.generateDirectionsMap(53.401789031994916, -2.9751729896109786,53.40263318725156, -2.9777506895271695)>>
 <main class="end">
 <div id="audio"></div>
 <div id="map" class="hide">$map</div>
 <div id="mount"></div>
-<h2>Bold Street</h2>
+<h2>New From Nowhere Bookshop</h2>
+
 <p>Would you like to go on another journey?</p>
 <p>Here are two options:</p>
 <div class="option-wrapper">
