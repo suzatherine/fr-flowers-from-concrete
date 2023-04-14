@@ -176,7 +176,6 @@ setup.pause = () => {
 setup.showCap = () => {
     const track = document.getElementById("captrack")
     const audio = document.getElementById("audio")
-    audio.textTracks[0].mode = 'showing';
     console.log(track)
 track.mode = 'showing';
     document.getElementById("caption").style.visibility = "visible";
@@ -185,7 +184,6 @@ track.mode = 'showing';
 setup.hideCap = () => {
     const track = document.getElementById("captrack")
     const audio = document.getElementById("audio")
-    audio.textTracks[0].mode = 'hidden';
    track.mode = 'hidden';
     document.getElementById("caption").style.visibility = "hidden";
   }
