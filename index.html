@@ -356,7 +356,7 @@ setup.backThirty = () => {
   &lt;h1&gt;$title&lt;/h1&gt;
   &lt;h3 class=&quot;subtitle&quot;&gt;With Fire &amp; Rage&lt;/h3&gt;
 &lt;/div &gt;
-&lt;/header&gt;</tw-passagedata><tw-passagedata pid="3" name="headerstory" tags="nobr" position="350,100" size="100,100">&lt;header&gt;
+&lt;/header&gt;</tw-passagedata><tw-passagedata pid="3" name="headerstory" tags="nobr" position="350,100" size="100,100">&lt;header class=&quot;story&quot;&gt;
 &lt;&lt;if $showBackwards is true&gt;&gt;
   &lt;div class=&quot;nav-wrapper&quot;&gt;
     &lt;div class=&quot;nav-item&quot;&gt;
@@ -369,7 +369,10 @@ setup.backThirty = () => {
 &lt;&lt;if $showMap is true&gt;&gt;
     &lt;div class=&quot;nav-wrapper&quot;&gt;
       &lt;div class=&quot;nav-item&quot;&gt;
-    &lt;&lt;link [img[assets/img/map.png]]&gt;&gt;&lt;&lt;toggleclass &quot;#map&quot; &quot;hide&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+    &lt;&lt;link [img[assets/img/map.png]]&gt;&gt;
+    &lt;&lt;toggleclass &quot;#map&quot; &quot;hide&quot;&gt;&gt;
+    &lt;&lt;toggleclass &quot;#poster&quot; &quot;hide&quot;&gt;&gt;
+    &lt;&lt;/link&gt;&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;&lt;/if&gt;&gt;
@@ -627,7 +630,7 @@ You have two options:
 &lt;div class=&quot;comp-warning&quot;&gt;Best to experience on a phone&lt;/div&gt;
 &lt;main class=&quot;landing&quot;&gt;
 &lt;h1&gt;The Flowers That Grow from Concrete&lt;/h1&gt;
-&lt;div class=&quot;poster-wrapper&quot;&gt;
+&lt;div class=&quot;poster-wrapper&quot; id=&quot;poster&quot;&gt;
    &lt;img class=&quot;poster&quot; src=&quot;./../assets/img/ftgfc.jpeg&quot;/&gt;
  &lt;/div&gt;
 &lt;&lt;button &quot;Begin&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
@@ -771,7 +774,7 @@ Is the church
 &lt;main class=&quot;story&quot;&gt;
 &lt;div id=&quot;mount&quot;&gt;&lt;/div&gt;
   &lt;&lt;timed 0.1s&gt;&gt;&lt;&lt;replace &quot;#mount&quot;&gt;&gt;
- &lt;div class=&quot;poster-wrapper&quot;&gt;
+ &lt;div class=&quot;poster-wrapper&quot; id=&quot;poster&quot;&gt;
    &lt;img class=&quot;poster&quot; src=&quot;./../assets/img/ftgfc.jpeg&quot;/&gt;
  &lt;/div&gt;
     &lt;p&gt;Press  &lt;div class=&quot;inline-btn-wrapper&quot;&gt;[[play|flowers]] &lt;/div&gt;to listen to The Flowers That Grow from Concrete&lt;/p&gt;
@@ -802,7 +805,7 @@ Is the church
   &lt;source src=&quot;https://www.dropbox.com/s/ua8cy9t2y147a27/03.%20Flowers%20that%20Grow%20through%20Concrete%20V1.mp3?raw=1&quot;&gt;
   &lt;track kind=&quot;captions&quot; srclang=&quot;en&quot; label=&quot;English captions&quot; id=&quot;captrack&quot; default&gt;
 &lt;/audio&gt;
-&lt;div class=&quot;poster-wrapper&quot;&gt;
+&lt;div class=&quot;poster-wrapper&quot; id=&quot;poster&quot;&gt;
    &lt;img class=&quot;poster&quot; src=&quot;./../assets/img/ftgfc.jpeg&quot;/&gt;
  &lt;/div&gt;
 &lt;div id=&quot;caption&quot;&gt;&lt;/div&gt;
@@ -836,6 +839,7 @@ As I listened to Alevtina, I questioned how is it possible to explain all of thi
 How could I describe this huge chandelier that hung from the ceiling of Mariupol Drama Theatre? 
 Or what happened to its crystals when the rocket hit the theatre? Because it must be too big to have completely disappeared?
 And is it important to speak of ashes from the chandelier, when hundreds of people were killed in that theatre?
+
 ALEVTINA SHVETSOVA:
 I was born and lived in Mariupol all my life. I love it very much. I’m from a Factory Workers dynasty, but I dreamed of being a journalist. 
 In 2014, when everything started, my son was born. He was my universe. So despite all these crucial situations I was concentrating on being a mother.
@@ -960,27 +964,36 @@ Then they made the surface concrete and began to use the space for concerts.</tw
 &lt;&lt;set $map = setup.generateDirectionsMap(53.401789031994916, -2.9751729896109786,53.40263318725156, -2.9777506895271695)&gt;&gt;
 &lt;&lt;include &quot;headerstory&quot;&gt;&gt;
 &lt;main class=&quot;story&quot;&gt;
-&lt;audio id=&quot;audio&quot; autoplay &gt;
+&lt;audio id=&quot;audio&quot; &gt;
   &lt;source src=&quot;https://www.dropbox.com/s/9xo321slihet6hf/03.boombox.mp3?raw=1&quot;&gt;
   &lt;track kind=&quot;captions&quot; srclang=&quot;en&quot; label=&quot;English captions&quot; id=&quot;captrack&quot; default&gt;
 &lt;/audio&gt;
 
 &lt;div id=&quot;map&quot;&gt;$map&lt;/div&gt;
-/* &lt;div class=&quot;poster-wrapper&quot;&gt;
+&lt;div class=&quot;poster-wrapper hide&quot; id=&quot;poster&quot;&gt;
    &lt;img class=&quot;poster&quot; src=&quot;./../assets/img/ftgfc.jpeg&quot;/&gt;
- &lt;/div&gt; */
+ &lt;/div&gt;
 &lt;br&gt;
 &lt;div id=&quot;caption&quot; &gt;&lt;/div&gt;
 &lt;div id=&quot;transcript&quot;&gt;&lt;/div&gt;
-&lt;div id=&quot;mount&quot; &gt;&lt;/div&gt;
+&lt;div id=&quot;mount&quot;  &gt;&lt;p class=&quot;comment&quot;&gt; To listen to &lt;em&gt;The Flowers That Grow from Concrete&lt;/em&gt; press &lt;div class=&quot;inline-btn-wrapper&quot;&gt;
+&lt;&lt;link &quot;play&quot;&gt;&gt;
+        &lt;&lt;if $playToggle is false&gt;&gt;
+      &lt;&lt;set $fn to setup.play()&gt;&gt;
+      &lt;&lt;set $playToggle to true&gt;&gt;
+      &lt;&lt;addclass &quot;#playpause&quot; &quot;playhighlight&quot;&gt;&gt;
+      &lt;&lt;else&gt;&gt;
+       &lt;&lt;set $fn to setup.pause()&gt;&gt;
+        &lt;&lt;set $playToggle to false&gt;&gt;
+      &lt;&lt;removeclass &quot;#playpause&quot; &quot;playhighlight&quot;&gt;&gt;
+      &lt;&lt;/if&gt;&gt;
+      &lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;/p&gt;&lt;/div&gt;
 
-&lt;&lt;timed 6s&gt;&gt;
-  &lt;&lt;addclass &quot;#forIcon&quot; &quot;circle&quot;&gt;&gt;
-   &lt;&lt;addclass &quot;#forIcon&quot; &quot;pulse&quot;&gt;&gt;
-/* &lt;&lt;replace &quot;#mount&quot;&gt;&gt;
+&lt;&lt;timed 15s&gt;&gt;
+&lt;&lt;replace &quot;#mount&quot;&gt;&gt;
 &lt;p class=&quot;comment&quot;&gt; When you&#39;re finished listening, let me know&lt;/p&gt;
 &lt;&lt;button &quot;I&#39;m finished&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
- &lt;&lt;/replace&gt;&gt; */
+ &lt;&lt;/replace&gt;&gt;
  &lt;&lt;/timed&gt;&gt;
 &lt;/main&gt;
 

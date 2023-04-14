@@ -286,8 +286,9 @@ setup.backThirty = () => {
 </header>
 
 
-:: headerstory [nobr] {"position":"350,100","size":"100,100"}
-<header>
+:: headerstory [nobr]
+
+<header class="story">
 <<if $showBackwards is true>>
   <div class="nav-wrapper">
     <div class="nav-item">
@@ -300,7 +301,10 @@ setup.backThirty = () => {
 <<if $showMap is true>>
     <div class="nav-wrapper">
       <div class="nav-item">
-    <<link [img[assets/img/map.png]]>><<toggleclass "#map" "hide">><</link>>
+    <<link [img[assets/img/map.png]]>>
+    <<toggleclass "#map" "hide">>
+    <<toggleclass "#poster" "hide">>
+    <</link>>
     </div>
   </div>
   <</if>>
@@ -313,7 +317,7 @@ setup.backThirty = () => {
   
   </div>
      <</if>>
-</header>
+</header> 
 
 
 :: footer [nobr] {"position":"100,375","size":"100,100"}
@@ -590,7 +594,7 @@ You have two options:
 <div class="comp-warning">Best to experience on a phone</div>
 <main class="landing">
 <h1>The Flowers That Grow from Concrete</h1>
-<div class="poster-wrapper">
+<div class="poster-wrapper" id="poster">
    <img class="poster" src="./../assets/img/ftgfc.jpeg"/>
  </div>
 <<button "Begin">><<goto $nextpass>><</button>>
@@ -754,7 +758,7 @@ Is the church
 <main class="story">
 <div id="mount"></div>
   <<timed 0.1s>><<replace "#mount">>
- <div class="poster-wrapper">
+ <div class="poster-wrapper" id="poster">
    <img class="poster" src="./../assets/img/ftgfc.jpeg"/>
  </div>
     <p>Press  <div class="inline-btn-wrapper">[[play|flowers]] </div>to listen to The Flowers That Grow from Concrete</p>
@@ -793,7 +797,7 @@ Is the church
   <source src="https://www.dropbox.com/s/ua8cy9t2y147a27/03.%20Flowers%20that%20Grow%20through%20Concrete%20V1.mp3?raw=1">
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
-<div class="poster-wrapper">
+<div class="poster-wrapper" id="poster">
    <img class="poster" src="./../assets/img/ftgfc.jpeg"/>
  </div>
 <div id="caption"></div>
@@ -831,6 +835,7 @@ As I listened to Alevtina, I questioned how is it possible to explain all of thi
 How could I describe this huge chandelier that hung from the ceiling of Mariupol Drama Theatre? 
 Or what happened to its crystals when the rocket hit the theatre? Because it must be too big to have completely disappeared?
 And is it important to speak of ashes from the chandelier, when hundreds of people were killed in that theatre?
+
 ALEVTINA SHVETSOVA:
 I was born and lived in Mariupol all my life. I love it very much. I’m from a Factory Workers dynasty, but I dreamed of being a journalist. 
 In 2014, when everything started, my son was born. He was my universe. So despite all these crucial situations I was concentrating on being a mother.
@@ -986,27 +991,36 @@ Then they made the surface concrete and began to use the space for concerts.
 <<set $map = setup.generateDirectionsMap(53.401789031994916, -2.9751729896109786,53.40263318725156, -2.9777506895271695)>>
 <<include "headerstory">>
 <main class="story">
-<audio id="audio" autoplay >
+<audio id="audio" >
   <source src="https://www.dropbox.com/s/9xo321slihet6hf/03.boombox.mp3?raw=1">
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
 
 <div id="map">$map</div>
-/* <div class="poster-wrapper">
+<div class="poster-wrapper hide" id="poster">
    <img class="poster" src="./../assets/img/ftgfc.jpeg"/>
- </div> */
+ </div>
 <br>
 <div id="caption" ></div>
 <div id="transcript"></div>
-<div id="mount" ></div>
+<div id="mount"  ><p class="comment"> To listen to <em>The Flowers That Grow from Concrete</em> press <div class="inline-btn-wrapper">
+<<link "play">>
+        <<if $playToggle is false>>
+      <<set $fn to setup.play()>>
+      <<set $playToggle to true>>
+      <<addclass "#playpause" "playhighlight">>
+      <<else>>
+       <<set $fn to setup.pause()>>
+        <<set $playToggle to false>>
+      <<removeclass "#playpause" "playhighlight">>
+      <</if>>
+      <</link>></div></p></div>
 
-<<timed 6s>>
-  <<addclass "#forIcon" "circle">>
-   <<addclass "#forIcon" "pulse">>
-/* <<replace "#mount">>
+<<timed 15s>>
+<<replace "#mount">>
 <p class="comment"> When you're finished listening, let me know</p>
 <<button "I'm finished">><<goto $nextpass>><</button>>
- <</replace>> */
+ <</replace>>
  <</timed>>
 </main>
 
