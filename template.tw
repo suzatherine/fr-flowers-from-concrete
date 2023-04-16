@@ -976,6 +976,8 @@ After this Boombox postponed their concerts, and their frontman joined the Ukrai
 <<set $showBackwards to true>>
 <<set $showForwards to false>>
 <<set $showCaptionsIcon to false>>
+<<audio ":all" stop>>
+
 /* Church  */
 <<set $map = setup.generateViewMap({originLat: 53.40300646457611,originLong:-2.9775038000001026, originName: "News From Nowhere Radical & Community Bookshop"})>>
 <main class="end">
