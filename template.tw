@@ -232,8 +232,15 @@ setup.backThirty = () => {
 
 
 :: StoryInit {"position":"100,100","size":"100,100"}
-
-
+<<cacheaudio "14" "./assets/audio/14.mp3">>
+<<cacheaudio "15" "./assets/audio/15.mp3">>
+<<cacheaudio "16" "./assets/audio/16.mp3">>
+<<cacheaudio "17" "./assets/audio/17.mp3">>
+<<cacheaudio "18" "./assets/audio/18.mp3">>
+<<cacheaudio "18.5" "./assets/audio/18.5.mp3">>
+<<cacheaudio "19" "./assets/audio/19.mp3">>
+<<cacheaudio "19.5" "./assets/audio/19.5.mp3">>
+<<waitforaudio>>
 
 
 :: header [nobr]{"position":"100,225","size":"100,100"}
@@ -642,7 +649,7 @@ setup.backThirty = () => {
 
 
 :: landing [nobr]
-<<set $title to "Flowers That Grow from Concrete">>
+<<set $title to "The Flowers That Grow from Concrete">>
 <<set $openOrClosed to "closed">>
 <<set $prevpass to "beginning">>
 <<set $passage to "landing">>
@@ -653,7 +660,7 @@ setup.backThirty = () => {
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-
+<<audio ":all" stop>><<audio "14" play>>
 <<set $map = setup.generateViewMap({originLat: 53.40177088748729,originLong: -2.975151932649947, originName: "St Luke’s Bombed Out Church"})>>
 <div id="audio"></div>
 <<include "header">>
@@ -684,6 +691,7 @@ setup.backThirty = () => {
 <main class="instructions">
 <div id="map" class="hide">$map</div>
   <<if $openOrClosed is "open">>
+  <<audio ":all" stop>><<audio "15" play>>
   <p>Walk up the steps, and through the large wooden door, on the left-hand side
 </p>
   <p>There is a suggested donation to enter</p>
@@ -693,6 +701,7 @@ setup.backThirty = () => {
 
 
   <<if $openOrClosed is "closed">>
+  <<audio ":all" stop>><<audio "17" play>>
   <p>Take a seat on the steps or the benches out the front</p>
   <p>I’m told its a place may of you gather for protests</p>
   <p>The garden might still be open, if you want to sit there</p>
@@ -717,6 +726,7 @@ setup.backThirty = () => {
 <<set $showCaptionsIcon to true>>
 <<set $showMap to false>>
 <<set $transcriptname to  "flowerstranscript">>
+<<audio ":all" stop>><<audio "16" play>>
 <<include "headerstory">>
 <main class="story" id="storyContainer">
 <audio id="audio" >
@@ -809,6 +819,7 @@ Then they made the surface concrete and began to use the space for concerts.
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
 <<set $map = setup.generateDirectionsMap({originLat:53.40177223219258, originLong: -2.9751474217300453, originName: "St Luke’s Bombed Out Church"},"News From Nowhere Radical Community Bookshop")>>
+<<audio ":all" stop>><<audio "18" play>>
 <div id="audio"></div>
 
 <main class="instructions">
@@ -834,6 +845,7 @@ Then they made the surface concrete and began to use the space for concerts.
 <<set $showBackwards to true>>
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
+<<audio ":all" stop>><<audio "18.5" play>>
 /* <<include "header">> */
 /* OPEN */
 <main class="ar">
@@ -866,6 +878,7 @@ Then they made the surface concrete and began to use the space for concerts.
 <<set $showForwards to true>>
 <<set $showCaptionsIcon to false>>
 <<set $map = setup.generateDirectionsMap({originLat:53.40177223219258, originLong: -2.9751474217300453, originName: "St Luke’s Bombed Out Church"},"News From Nowhere Radical Community Bookshop")>>
+<<audio ":all" stop>><<audio "19" play>>
 <div id="audio"></div>
 
 <main class="instructions">
@@ -893,6 +906,7 @@ Then they made the surface concrete and began to use the space for concerts.
 <<set $showCaptionsIcon to true>>
 <<set $transcriptname to  "boomboxtranscript">>
 /* Everyman to 1931  */
+<<audio ":all" stop>><<audio "19.5" play>>
 <<set $map = setup.generateDirectionsMap({originLat:53.40177223219258, originLong: -2.9751474217300453, originName: "St Luke’s Bombed Out Church"},"News From Nowhere Radical Community Bookshop")>>
 <<include "headerstory">>
 <main class="story" id="storyContainer" >
@@ -911,7 +925,7 @@ Then they made the surface concrete and began to use the space for concerts.
 
 <<timed 1s>>
   <<replace "#mount">>  
-<p class="comment">You can use the map <<link [img[assets/img/map.png]]>><</link>> to help you get there</p>
+<p class="comment">The map <<link [img[assets/img/map.png]]>><</link>> will help guide you</p>
 <</replace>>
  <</timed>>
 
