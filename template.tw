@@ -393,7 +393,7 @@ setup.backThirty = () => {
  
   <div class="nav-wrapper">
     <div class="nav-item">
-    <div id="mount"> <span class="comment">Press the image <br> to see it transform</span></div>
+    <div id="mount"> <span class="comment">Press the photo <br> to see it transform</span></div>
     </div></div>
     <div class="nav-wrapper">
     <div class="nav-item">
@@ -852,7 +852,7 @@ Then they made the surface concrete and began to use the space for concerts.
 
   <div class="ar-imgs-container one" id="ARContainer">
     <div class="hidden-img-wrapper touch transparent" id="reveal" >
-        <img src="./assets/img/gifs/ar1open.gif" class="">
+        <img src="./assets/img/gifs/ar1.gif" class="">
       </div>
     <div class="ar-img-wrapper touch bottom" id="initial" >
       <img src="./assets/img/stlukes.jpeg" class="">
