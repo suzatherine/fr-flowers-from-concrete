@@ -215,7 +215,7 @@ setup.backThirty = () => {
 <<cacheaudio "18" "./assets/audio/18.mp3">>
 <<cacheaudio "18.5" "./assets/audio/18.5.mp3">>
 <<cacheaudio "19" "./assets/audio/19.mp3">>
-<<cacheaudio "19.5" "./assets/audio/19.5.mp3">>
+<<cacheaudio "19.5" "./assets/audio/19.5V2.mp3">>
 <<waitforaudio>>
 
 
@@ -997,7 +997,7 @@ setup.backThirty = () => {
 <<include "headerstory">>
 <main class="story" id="storyContainer">
 <audio id="audio" >
-  <source src="https://www.dropbox.com/s/faw4av4uwshjbtr/03.%20Flowers%20that%20Grow%20through%20Concrete%20V1.mp3?raw=1">
+  <source src="https://withfireandrageliverpool.com/audio/FC/flowers-V2.mp3">
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
 <div class="poster-wrapper" id="poster">
@@ -1194,7 +1194,7 @@ In occupied cities, religious artefacts have been looted, and unique and rare re
 <<include "headerstory">>
 <main class="story" id="storyContainer" >
 <audio id="audio" >
-  <source src="https://www.withfireandrageliverpool.com/audio/FC/03-WALK-3-v1.mp3">
+  <source src="https://www.withfireandrageliverpool.com/audio/FC/walk3-V2.mp3">
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
 
