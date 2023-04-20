@@ -301,7 +301,7 @@ setup.backThirty = () => {
   <<if $sendOn is true>>
  <div class="nav-wrapper" id="forIcon">
     <div class="nav-item " >
-        <a href="https://fr-war-of-words.netlify.app/">
+        <a href="https://fr-dark-side-moon.netlify.app/">
 <img src="assets/img/for.png"></a>
     </div>
   </div>
@@ -1238,7 +1238,7 @@ In occupied cities, religious artefacts have been looted, and unique and rare re
   <<timed 30s>>
 <<replace "#headerinstmount">>
     <p class="comment"> Are you outside News From Nowhere? 
-    <a href="https://fr-war-of-words.netlify.app/">
+    <a href="https://fr-dark-side-moon.netlify.app/">
 <button>I'm here</button></a>
     </p>
     <</replace>>
