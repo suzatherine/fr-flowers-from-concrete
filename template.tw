@@ -664,7 +664,7 @@ setup.backThirty = () => {
 <main class="" id="">
 
 <div class="poster-wrapper" id="poster">
-   <img class="poster" src="./../assets/img/flowers.jpeg"/>
+   <img class="poster" src="./../assets/img/flowers-title.jpeg"/>
  </div>
  <div class="menu-wrapper">
     <<button "Keep going">><<goto $nextpass>><</button>>
@@ -728,7 +728,7 @@ setup.backThirty = () => {
 <<set $showCaptionsIcon to false>>
 
 
-<<set $map = setup.generateViewMap({originLat: 53.402939134543324,originLong:-2.969497397902565, originName: "Liverpool Everyman Theatre"})>>
+<<set $map = setup.generateViewMap({originLat: 53.40177088748729,originLong: -2.975151932649947, originName: "St Luke’s Bombed Out Church"})>>
 
 
 <div id="audio"></div>
