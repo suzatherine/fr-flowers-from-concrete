@@ -164,17 +164,21 @@ return iFrame
 
 // TOUCHEVENTS 
 // taken from https://developer.mozilla.org/en-US/docs/Web/API/Touch_events  
-setup.startup = () =>  {
+setup.startup = (playOnTouch) =>  {
   const ongoingTouches = [];
 
 const handleStart = (evt) =>{
   evt.preventDefault();
+  if (playOnTouch === true){
+const audio = document.getElementById("audio");
+const playpause = document.getElementById("playpause");
+ audio.play();
+ playpause.classList.add("playhighlight");
+}
  const initial = document.getElementById("initial");
 const reveal = document.getElementById("reveal");
      initial.classList.add("transparent");  
      reveal.classList.remove("transparent");  
-
-
 }
 
 const handleMove = (evt) => {
@@ -700,7 +704,7 @@ setup.backThirty = () => {
  &lt;div class=&quot;menu-wrapper&quot;&gt;
     &lt;&lt;button &quot;Keep going&quot;&gt;&gt;&lt;&lt;goto $nextpass&gt;&gt;&lt;&lt;/button&gt;&gt;
      &lt;&lt;button &quot;I&#39;m joining the audio tour here&quot;&gt;&gt;&lt;&lt;goto &quot;framing&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-     &lt;a href=&quot;www.withfireandrage.com&quot;&gt;&lt;button&gt;Leave the Tour&lt;/button&gt;&lt;/a&gt;
+     &lt;a href=&quot;https://www.withfireandrage.com&quot;&gt;&lt;button&gt;Leave the Tour&lt;/button&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/main&gt;</tw-passagedata><tw-passagedata pid="13" name="framing" tags="nobr" position="700,175" size="100,100">&lt;&lt;set $prevpass to &quot;beginning&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;framing&quot;&gt;&gt;
@@ -712,7 +716,7 @@ setup.backThirty = () => {
 &lt;&lt;set $showBackwards to true&gt;&gt;
 &lt;&lt;set $showCaptionsIcon to false&gt;&gt;
 &lt;&lt;set $showMap to false&gt;&gt;
-
+  &lt;source src=&quot;https://withfireandrageliverpool.com/audio/ONB/onboardingp1.mp3&quot;&gt;
 &lt;main class=&quot;instructions&quot; id=&quot;&quot;&gt;
 &lt;div id=&quot;mount&quot;&gt;&lt;/div&gt;
 &lt;&lt;timed 0.1s&gt;&gt;&lt;&lt;replace &quot;#mount&quot;&gt;&gt;
@@ -747,12 +751,9 @@ setup.backThirty = () => {
 &lt;&lt;set $showForwards to true&gt;&gt;
 &lt;&lt;set $showBackwards to true&gt;&gt;
 &lt;&lt;set $showCaptionsIcon to false&gt;&gt;
-
-
 &lt;&lt;set $map = setup.generateViewMap({originLat: 53.40177088748729,originLong: -2.975151932649947, originName: &quot;St Luke’s Bombed Out Church&quot;})&gt;&gt;
 
-
-&lt;div id=&quot;audio&quot;&gt;&lt;/div&gt;
+&lt;source src=&quot;https://withfireandrageliverpool.com/audio/ONB/onboardingp2.mp3&quot;&gt;
 /* &lt;&lt;include &quot;header&quot;&gt;&gt; */
 &lt;main class=&quot;instructions&quot;&gt;
 &lt;h2&gt;Onboarding&lt;/h2&gt;
@@ -803,8 +804,7 @@ setup.backThirty = () => {
 &lt;&lt;set $showBackwards to true&gt;&gt;
 &lt;&lt;set $showCaptionsIcon to false&gt;&gt;
 
-&lt;div id=&quot;audio&quot;&gt;&lt;/div&gt;
-/* &lt;&lt;include &quot;header&quot;&gt;&gt; */
+  &lt;source src=&quot;https://withfireandrageliverpool.com/audio/ONB/onboardingp3.mp3&quot;&gt;
 &lt;main class=&quot;instructions&quot;&gt;
 &lt;h2&gt;Onboarding&lt;/h2&gt;
 &lt;div id=&quot;map&quot; class=&quot;hide&quot;&gt;$map&lt;/div&gt;
@@ -861,9 +861,7 @@ setup.backThirty = () => {
 &lt;&lt;set $showForwards to true&gt;&gt;
 &lt;&lt;set $showBackwards to true&gt;&gt;
 &lt;&lt;set $showCaptionsIcon to false&gt;&gt;
-
-&lt;div id=&quot;audio&quot;&gt;&lt;/div&gt;
-/* &lt;&lt;include &quot;header&quot;&gt;&gt; */
+  &lt;source src=&quot;https://withfireandrageliverpool.com/audio/ONB/onboardingp4.mp3&quot;&gt;
 &lt;main class=&quot;instructions&quot;&gt;
 &lt;h2&gt;Onboarding&lt;/h2&gt;
 &lt;div id=&quot;map&quot; class=&quot;hide&quot;&gt;$map&lt;/div&gt;
@@ -1031,46 +1029,81 @@ setup.backThirty = () => {
  &lt;&lt;/timed&gt;&gt;
 &lt;/main&gt;
 
-&lt;&lt;include &quot;footerstory&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="flowerstranscript" tags="" position="1225,225" size="100,100">&lt;h2&gt;Transcript&lt;/h2&gt;
+&lt;&lt;include &quot;footerstory&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="flowerstranscript" tags="" position="1225,225" size="100,100">&lt;h2&gt;FLOWERS THAT GROW FROM CONCRETE&lt;/h2&gt;
 
-NARRATOR:
+NARRATION BY VERONIKA SKLIAROVA:
+
 I call what I do cultural activism. 
-I founded Parad e-Fest as a way to say something loudly together - about human rights, LGBTQ+ rights, feminism and inclusion. Using arts in public spaces to raise civic awareness.
+
+I founded Parade-Fest as a way to say something loudly together - about human rights, LGBTQ+ rights, feminism and inclusion. Using arts in public spaces to raise civic awareness.
+
 Asking how can we claim our rights to live in the city and to change it.
-...Of course, now we claim our rights to our cities in a different way, with weapons. 
+…Of course, now we claim our rights to our cities in a different way, with weapons. 
+
 As the artist and journalist Alevtina Shvetsova told me her story, it reminded me of before the full-scale invasion. The many people Parade-Fest had found in Mariupol to speak loudly with. That as flowers bloomed, we were planning and dreaming to make this choir of cultural interventions.
+
 As I listened to Alevtina, I questioned how is it possible to explain all of this to you? 
 How could I describe this huge chandelier that hung from the ceiling of Mariupol Drama Theatre? 
+
 Or what happened to its crystals when the rocket hit the theatre? Because it must be too big to have completely disappeared?
+
 And is it important to speak of ashes from the chandelier, when hundreds of people were killed in that theatre?
 
-ALEVTINA SHVETSOVA:
-I was born and lived in Mariupol all my life. I love it very much. I’m from a Factory Workers dynasty, but I dreamed of being a journalist. 
+
+TESTIMONY OF ALEVTINA SHVETSOVA:
+
+I was born and lived in Mariupol all my life. I love it very much. I’m from a Factory workers dynasty, but I dreamed of being a journalist. 
+
 In 2014, when everything started, my son was born. He was my universe. So despite all these crucial situations I was concentrating on being a mother.
+
 Then the Russians shelled Mariupol in 2015, and it was a huge shock.
+
 A lot of people died, a lot of kids. And from that moment we understood what war is.
+
 It was very scary, and it mobilised people because we were afraid to be occupied. 
+
 I decided to become a journalist, to work on TV and to challenge the Russian propaganda that Mariupol is a Russian city with Russian culture, showing instead Ukrainian artists, poets, fine arts…
+
 A lot of art festivals, cultural events and exhibitions became inspired in this period and appeared in the city.
+
 It was like fresh water that quenched a dry throat. A synergy of artists, local people and audiences. 
+
 Art became united with this industrial landscape, like flowers that grow from the concrete. 
+
 When the full-scale invasion began, we thought we already knew what worries  were but we did not imagine how merciless Russians can be.
+
 From the beginning, a lot of people lost their homes because of shelling. There was no water, food, electricity… no internet or mobile connection. Mariupol Drama Theatre became a humanitarian and informational point. 
-By March it was already impossible to leave the city, and there were rumours there would be an evacuation from the theatre.
+
+By March, it was already impossible to leave the city, and there were rumours there would be an evacuation from the theatre.
+
 Myself and my son went every day but the evacuation never happened.
+
 On the 16th of March, I was at home preparing soup in the courtyard with our neighbours in our building. This was the only way we could cook, and everyone was hungry. I came up to the apartment with the kids to eat and then there was a huge explosion.
+
 The bomb had landed in the courtyard, and we could not see because dust was everywhere. 
+
 My brother took the smaller kids, and the adults began to dig. 
+
 We found our neighbour&#39;s bodies under the rubble.
+
 After that, we understood that no one and nothing will save us.
-We decided to walk by foot from Mariupol. 
+
+We decided to walk by foot.
+
 As we fled we could see the fire from the explosion on the Mariupol Drama Theatre. It was the same plane that dropped the bomb on my home.
+
 The whole city was on fire, with clouds of smoke so we didn&#39;t know the measure of the tragedy that took place in the theatre.
+
 We heard later that hundreds of people lay in the ashes.
+
 It was a big shock. It was clearly marked as a theatre and there were huge letters written outside on the ground that said “children”.
+
 When the Russians occupied the city they did not take the bodies from under the ruins of the theatre.
+
 So no one knows the exact number of people that died in this tragedy.
+
 They took all ashes and transported them somewhere, dropping them just like trash.
+
 Then they made the surface concrete and began to use the space for concerts.</tw-passagedata><tw-passagedata pid="21" name="instnar3" tags="nobr" position="100,350" size="100,100">&lt;&lt;set $prevpass to &quot;flowers&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;instnar3&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;AR1&quot;&gt;&gt;
@@ -1107,7 +1140,10 @@ Then they made the surface concrete and began to use the space for concerts.</tw
 &lt;&lt;set $transcriptname to  &quot;ARtranscript&quot;&gt;&gt;
 &lt;&lt;audio &quot;:all&quot; stop&gt;&gt;&lt;&lt;audio &quot;18.5&quot; play&gt;&gt;
 &lt;&lt;include &quot;headerAR&quot;&gt;&gt;
-/* OPEN */
+&lt;audio id=&quot;audio&quot; &gt;
+  &lt;source src=&quot;&quot;&gt;
+
+&lt;/audio&gt;
 &lt;main class=&quot;ar&quot;&gt;
 
   &lt;div class=&quot;ar-imgs-container one&quot; id=&quot;ARContainer&quot;&gt;
@@ -1122,7 +1158,9 @@ Then they made the surface concrete and began to use the space for concerts.</tw
 &lt;div id=&quot;transcript&quot;&gt;&lt;/div&gt;
 &lt;/main&gt;
 &lt;&lt;include &quot;footerAR&quot;&gt;&gt;
-&lt;&lt;done&gt;&gt;&lt;&lt;set $s to setup.startup()&gt;&gt;&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="ARtranscript" tags="" position="350,350" size="100,100">Alongside theatres and cultural venues, hundreds of churches, synagogues, mosques, and cemeteries have been damaged and destroyed. 
+&lt;&lt;done&gt;&gt;
+&lt;&lt;removeclass &quot;#playpause&quot; &quot;playhighlight&quot;&gt;&gt;
+&lt;&lt;set $s to setup.startup(true)&gt;&gt;&lt;&lt;/done&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="ARtranscript" tags="" position="350,350" size="100,100">Alongside theatres and cultural venues, hundreds of churches, synagogues, mosques, and cemeteries have been damaged and destroyed. 
 
 In occupied cities, religious artefacts have been looted, and unique and rare religious texts have been burnt.</tw-passagedata><tw-passagedata pid="24" name="instnar5" tags="nobr" position="475,350" size="100,100">&lt;&lt;set $prevpass to &quot;AR1&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;instnar5&quot;&gt;&gt;
@@ -1215,13 +1253,18 @@ In occupied cities, religious artefacts have been looted, and unique and rare re
 
  &lt;/main&gt;
 
-&lt;&lt;include &quot;footerstorywalk&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="boomboxtranscript" tags="" position="725,350" size="100,100">&lt;h2&gt;Transcript&lt;/h2&gt;
+&lt;&lt;include &quot;footerstorywalk&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="boomboxtranscript" tags="" position="725,350" size="100,100">&lt;h2&gt;MIXTAPE - BOOMBOX&lt;/h2&gt;
 
-NARRATOR: 
+NARRATION BY VERONIKA SKLIAROVA:
+
 A couple of days before the full-scale invasion, there was a huge Pro-Ukrainian meeting in Mariupol. It took place in the square, near the Mariupol Drama Theatre. 
+
 Then the very famous pop band Boombox played a concert in the theatre. 
 It was the last concert played before Russia invaded, the last concert in the Mariupol Drama Theatre. 
-After this Boombox postponed their concerts, and their frontman joined the Ukrainian army.</tw-passagedata><tw-passagedata pid="27" name="end" tags="nobr" position="850,350" size="100,100">&lt;&lt;set $prevpass to &quot;boombox&quot;&gt;&gt;
+
+After this Boombox postponed their concerts, and their frontman joined the Ukrainian army.
+
+(Pop music by Boombox called Empires Will Fall)</tw-passagedata><tw-passagedata pid="27" name="end" tags="nobr" position="850,350" size="100,100">&lt;&lt;set $prevpass to &quot;boombox&quot;&gt;&gt;
 &lt;&lt;set $passage to &quot;end&quot;&gt;&gt;
 &lt;&lt;set $nextpass to &quot;end&quot;&gt;&gt;
 &lt;&lt;set $showMap to false&gt;&gt;
