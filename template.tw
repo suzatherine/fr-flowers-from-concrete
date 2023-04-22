@@ -15,8 +15,8 @@ Flowers That Grow from Concrete
 :: Story Stylesheet [stylesheet]
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap");
 
-@import url("./styles/generics.css");
-@import url("./styles/styles.css");
+@import url("styles/generics.css");
+@import url("styles/styles.css");
 
 
 
@@ -212,14 +212,14 @@ setup.backThirty = () => {
 
 
 :: StoryInit {"position":"100,100","size":"100,100"}
-<<cacheaudio "14" "./assets/audio/14.mp3">>
-<<cacheaudio "15" "./assets/audio/15.mp3">>
-<<cacheaudio "16" "./assets/audio/16V2.mp3">>
-<<cacheaudio "17" "./assets/audio/17.mp3">>
-<<cacheaudio "18" "./assets/audio/18.mp3">>
-<<cacheaudio "18.5" "./assets/audio/18.5.mp3">>
-<<cacheaudio "19" "./assets/audio/19.mp3">>
-<<cacheaudio "19.5" "./assets/audio/19.5V2.mp3">>
+<<cacheaudio "14" "assets/audio/14.mp3">>
+<<cacheaudio "15" "assets/audio/15.mp3">>
+<<cacheaudio "16" "assets/audio/16V2.mp3">>
+<<cacheaudio "17" "assets/audio/17.mp3">>
+<<cacheaudio "18" "assets/audio/18.mp3">>
+<<cacheaudio "18.5" "assets/audio/18.5.mp3">>
+<<cacheaudio "19" "assets/audio/19.mp3">>
+<<cacheaudio "19.5" "assets/audio/19.5V2.mp3">>
 <<waitforaudio>>
 
 
@@ -305,7 +305,7 @@ setup.backThirty = () => {
   <<if $sendOn is true>>
  <div class="nav-wrapper" id="forIcon">
     <div class="nav-item " >
-        <a href="https://fr-dark-side-moon.netlify.app/">
+        <a href="https://withfireandrageliverpool.com/moon">
 <img src="assets/img/for.png"></a>
     </div>
   </div>
@@ -668,16 +668,42 @@ setup.backThirty = () => {
 <main class="" id="">
 
 <div class="poster-wrapper" id="poster">
-   <img class="poster" src="./../assets/img/flowers-title.jpeg"/>
+   <img class="poster" src="assets/img/flowers-title.jpeg"/>
  </div>
  <div class="menu-wrapper">
     <<button "Keep going">><<goto $nextpass>><</button>>
      <<button "I'm joining the audio tour here">><<goto "framing">><</button>>
-     <a href="https://www.withfireandrage.com"><button>Leave the Tour</button></a>
+      <<button "Leave">><<goto "leave">><</button>>
 </div>
 </main>
 
+:: leave [nobr]
+<<set $prevpass to "beginning">>
+<<set $passage to "leave">>
+<<set $nextpass to "leave">>
+<<set $transcript to false>>
+<<set $playToggle to false>>
+<<set $captionToggle to false>>
+<<set $showForwards to false>>
+<<set $showBackwards to true>>
+<<set $showCaptionsIcon to false>>
+<<set $showMap to false>>
+<audio id="audio" autoplay >
+  <source src="https://withfireandrageliverpool.com/audio/ONB/CreditsAltV1.mp3">
+</audio>
+<main class="instructions" id="">
+<div id="mount"></div>
+<p>Thank you for joining me today</p>
 
+<p>With Fire And Rage is created from the testimonies, art, photography, and music of artists across Ukraine </p>
+<p>I invite you to discover their work </p>
+<p>Listen to more online</p>
+<p>Or visit other locations another day</p>
+
+<a href="https://www.withfireandrage.com"  rel="noreferrer" style="color:var(--color-yellow) "><p>withfireandrage.com</p></a>
+
+</main>
+<<include "footer">>
 
 :: framing [nobr]  {"position":"700,175","size":"100,100"}
 <<set $prevpass to "beginning">>
@@ -999,7 +1025,7 @@ setup.backThirty = () => {
   <track kind="captions" srclang="en" label="English captions" id="captrack" default>
 </audio>
 <div class="poster-wrapper" id="poster">
-   <img class="poster" src="./../assets/img/flowers.jpeg"/>
+   <img class="poster" src="assets/img/flowers.jpeg"/>
  </div>
   
 <div id="caption" class="hide"></div>
@@ -1157,17 +1183,16 @@ Then they made the surface concrete and began to use the space for concerts.
 <<audio ":all" stop>><<audio "18.5" play>>
 <<include "headerAR">>
 <audio id="audio" >
-  <source src="">
-
+  <source src="https://withfireandrageliverpool.com/audio/FC/PD2V1.mp3">
 </audio>
 <main class="ar">
 
   <div class="ar-imgs-container one" id="ARContainer">
     <div class="hidden-img-wrapper touch transparent" id="reveal" >
-        <img src="./assets/img/gifs/ar1.gif" class="">
+        <img src="assets/img/gifs/ar1.gif" class="">
       </div>
     <div class="ar-img-wrapper touch bottom" id="initial" >
-      <img src="./assets/img/stlukes.jpeg" class="">
+      <img src="assets/img/stlukes.jpeg" class="">
       </div>
   </div>
 
@@ -1238,7 +1263,7 @@ In occupied cities, religious artefacts have been looted, and unique and rare re
 
 <div id="map" class="">$map</div>
 /* <div class="poster-wrapper hide" id="poster">
-   <img class="poster" src="./../assets/img/obpy.jpeg"/>
+   <img class="poster" src="assets/img/obpy.jpeg"/>
  </div> */
 <div class="caution" ><img src="assets/img/caution.png"><p>Take care crossing roads </p></div>
 <div id="transcript"></div>
@@ -1256,8 +1281,8 @@ In occupied cities, religious artefacts have been looted, and unique and rare re
 <<link "play">>
   <<timed 4s>>
       <<replace "#headerinstmount">>
-    <p class="comment"> Are you outside the Liverpool Philharmonic?  
-    <a href="https://fr-spirits-concrete-iron.netlify.app/">
+    <p class="comment"> Are you outside News From Nowhere? 
+    <a href="https://withfireandrageliverpool.com/moon">
 <button>I'm here</button></a>
     </p>
     <</replace>>
@@ -1276,7 +1301,7 @@ In occupied cities, religious artefacts have been looted, and unique and rare re
   <<timed 30s>>
 <<replace "#headerinstmount">>
     <p class="comment"> Are you outside News From Nowhere? 
-    <a href="https://fr-dark-side-moon.netlify.app/">
+    <a href="https://withfireandrageliverpool.com/moon">
 <button>I'm here</button></a>
     </p>
     <</replace>>
@@ -1306,37 +1331,6 @@ After this Boombox postponed their concerts, and their frontman joined the Ukrai
 
 
 
-:: end [nobr]
-<<set $prevpass to "boombox">>
-<<set $passage to "end">>
-<<set $nextpass to "end">>
-<<set $showMap to false>>
-<<set $showAudio to false>>
-<<set $showReplay to true>>
-<<set $showBackwards to true>>
-<<set $showForwards to false>>
-<<set $showCaptionsIcon to false>>
-<<audio ":all" stop>>
-
-/* Church  */
-<<set $map = setup.generateViewMap({originLat: 53.40300646457611,originLong:-2.9775038000001026, originName: "News From Nowhere Radical & Community Bookshop"})>>
-<main class="end">
-<div id="audio"></div>
-<div id="map" class="hide">$map</div>
-<div id="mount"></div>
-<h2>News from Nowhere Bookshop</h2>
-<p>Would you like to go on another journey?</p>
-<br/>
- <h3>The Dark Side of the Moon</h3>
- <br/>
-    <a href="https://fr-dark-side-moon.netlify.app/">
-<button>Start</button></a>
-
-
-
-/* <p>Or back to the main <a href="https://liv-ukr-main.netlify.app/map">map</a></p> */
-</main>
-<<include "footer">>
 
 
 
