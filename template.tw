@@ -716,7 +716,9 @@ setup.backThirty = () => {
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
 <<set $showMap to false>>
+<audio id="audio" autoplay >
   <source src="https://withfireandrageliverpool.com/audio/ONB/onboardingp1.mp3">
+</audio>
 <main class="instructions" id="">
 <div id="mount"></div>
 <<timed 0.1s>><<replace "#mount">>
@@ -738,7 +740,7 @@ setup.backThirty = () => {
 <</append>><</timed>>
 
 <<timed 8s>><<append "#mount">>
-<p>You can move forward via a button like<<button "This">><<goto $nextpass>><</button>></p> 
+<p>To move forward press a button like <<button "Next">><<goto $nextpass>><</button>></p> 
 <</append>><</timed>>
  
 </main>
@@ -757,8 +759,9 @@ setup.backThirty = () => {
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
 <<set $map = setup.generateViewMap({originLat: 53.40177088748729,originLong: -2.975151932649947, originName: "St Luke’s Bombed Out Church"})>>
-
+<audio id="audio" autoplay >
 <source src="https://withfireandrageliverpool.com/audio/ONB/onboardingp2.mp3">
+</audio>
 /* <<include "header">> */
 <main class="instructions">
 <h2>Onboarding</h2>
@@ -772,7 +775,7 @@ setup.backThirty = () => {
 <</timed>>
 <<timed 2s>>
    <<append "#mount">>
-<p>This arrow takes you back[img[Back|assets/img/back.png][$prevpass]]</p>
+<p>This arrow takes you back [img[Back|assets/img/back.png][$prevpass]]</p>
   <</append>>
 <</timed>>
 <<timed 4s>>
@@ -783,7 +786,7 @@ setup.backThirty = () => {
 <</timed>>
 <<timed 6s>>
 <<append "#mount">>
-<p>You can replay with this icon   [img[Replay|assets/img/replay.png][$passage]]</p>
+<p>You can replay with this icon [img[Replay|assets/img/replay.png][$passage]]</p>
   <</append>>
 <</timed>>
  <<timed 8s>>
@@ -811,8 +814,9 @@ setup.backThirty = () => {
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
-
+<audio id="audio" autoplay >
   <source src="https://withfireandrageliverpool.com/audio/ONB/onboardingp3.mp3">
+  </audio>
 <main class="instructions">
 <h2>Onboarding</h2>
 <div id="map" class="hide">$map</div>
@@ -874,11 +878,14 @@ setup.backThirty = () => {
 <<set $showForwards to true>>
 <<set $showBackwards to true>>
 <<set $showCaptionsIcon to false>>
+<<audio ":all" stop>>
+<audio id="audio" autoplay >
   <source src="https://withfireandrageliverpool.com/audio/ONB/onboardingp4.mp3">
+</audio>
 <main class="instructions">
 <h2>Onboarding</h2>
 <div id="map" class="hide">$map</div>
-<div id="mount"></div>
+<div id="mount" class="onboarding"></div>
 <<timed 0.1s>>
   <<append "#mount">>
     <p>At every location, I will suggest places to sit, to lean, to shelter</p>
@@ -917,12 +924,12 @@ setup.backThirty = () => {
     <span>Step-free access </span>
     </div>
       <div class="multiple-icon-item">
-      <img src="assets/img/wifi.png" >
+      <img src="assets/img/charge.png" >
     <span>Phone Charger  </span>
     </div>
       <div class="multiple-icon-item">
       <img src="assets/img/caution.png" >
-    <span>Caution! take care crossing roads</span>
+    <span>Caution!</span>
     </div>
 </div>
 
